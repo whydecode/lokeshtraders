@@ -1,0 +1,30 @@
+.about {
+  padding-top: 4.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about > h1 {
+  flex-basis: 80%;
+  width: 80%;
+}
+.aboutContent,
+.photo {
+  width: 40%;
+  min-width: 250px;
+}
+.photo > img {
+  width: 80%;
+  padding: 2% 10%;
+}
+
+.aboutContent > p {
+  font-size: calc(12px + 0.4vw);
+}
+
+@media (max-width: 800px) {
+  .aboutContent,
+  .photo {
+    width: 80%;
+  }
+}

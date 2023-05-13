@@ -1,0 +1,50 @@
+.newArrivals {
+  overflow: hidden;
+  width: 100%;
+  padding: 30px 0;
+}
+.sliding-paragraphs {
+  width: 300%;
+  display: flex;
+  font-size: calc(10px + 0.4vw);
+}
+
+.slide-paragraph {
+  width: 100vw;
+  text-align: end;
+  animation: slideAnimation 15s infinite linear;
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+.sliding-paragraphs:hover > .slide-paragraph {
+  animation-play-state: paused;
+}
+.slide-paragraph > sup {
+  color: red;
+  animation: colorChange 1s infinite linear;
+}
+
+@keyframes colorChange {
+  0% {
+    color: violet;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: yellow;
+  }
+  100% {
+    color: red;
+  }
+}
