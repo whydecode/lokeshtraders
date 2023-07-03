@@ -19,15 +19,17 @@ const Home = () => {
       {/* ---------------------------------- INTRO ----------------------------------- */}
       <div className="intro">
         <div className="intro-overlay">
-          <h1 className="introHead">School Books & Fancy Stationery</h1>
-          <p className="introText">
-            Lokesh Traders in Bharatpur, Rajasthan, India is a renowned shop for
-            school books and fancy stationery. It has been serving the local
-            community for over 30 years, offering a wide variety of items at
-            reasonable prices. From textbooks to notebooks, pens to pencils, and
-            other office supplies, We have it all.
-          </p>
+          <h1 className="introHead">Everything You Need </h1>
+          <h2 className="introText">FOR SCHOOL</h2>
         </div>
+      </div>
+      <div className="introInfo">
+        <p>
+          As a student, you're driven to succeed, and we're here to help you
+          achieve your goals. With our unparalleled selection of high-quality
+          educational resources, books, supplies, and equipment, you can unlock
+          your full potential and excel in all your pursuits.
+        </p>
       </div>
       {/* ---------------------------------- New Arrivals ----------------------------------- */}
 
@@ -37,6 +39,7 @@ const Home = () => {
 
       <div className="services">
         <h1>Services we Provide</h1>
+
         <br />
         <div
           ref={ref1}
@@ -63,7 +66,7 @@ const Home = () => {
           ref={ref2}
           className="card"
           style={{
-            transform: isInView2 ? "none" : "translatey(200px)",
+            transform: isInView2 ? "none" : "translatey(150px)",
             opacity: isInView2 ? 1 : 0,
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
@@ -107,7 +110,7 @@ const Home = () => {
 
       {/* ---------------------------------- Map ----------------------------------- */}
 
-      <div className="map">
+      {/* <div className="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443.4529364758668!2d77.48571014447859!3d27.230968376610466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3973a39a748c2307%3A0xed42c77a332448a9!2sLOKESH%20TRADERS!5e0!3m2!1sen!2sin!4v1682761165984!5m2!1sen!2sin"
           width="800"
@@ -116,7 +119,7 @@ const Home = () => {
           loading="lazy"
           title="map"
         ></iframe>
-      </div>
+      </div> */}
     </div>
   );
 };

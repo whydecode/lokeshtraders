@@ -23,6 +23,11 @@
     transform: translateX(-300%);
   }
 }
+
+.slide-paragraph > img {
+  height: 80px;
+}
+
 .sliding-paragraphs:hover > .slide-paragraph {
   animation-play-state: paused;
 }

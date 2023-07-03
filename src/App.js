@@ -7,8 +7,10 @@ import Home from "./pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Schools from "./pages/Schools";
 import Stationery from "./pages/Stationery";
+import { useEffect, useState } from "react";
 
 function App() {
+  
   return (
     <>
       <BrowserRouter>

@@ -15,6 +15,7 @@ function Navbar() {
   const hamburger = open ? "hamburger toggle" : "hamburger";
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
+    console.log("SCREEN DOWN");
     if (window.scrollY >= 200) {
       setColorchange(true);
     } else {
@@ -25,7 +26,7 @@ function Navbar() {
   return (
     <nav className={colorChange ? "navbar colorChange" : "navbar"}>
       <Link to="/" id="name" className={link}>
-        <img src={logo} alt="" className="logo"/>
+        <img src={logo} alt="" className="logo" />
       </Link>
       <div className={hamburger} onClick={handleClick}>
         <div className="line1"></div>

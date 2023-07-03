@@ -1,18 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 :root {
-  --contrast: #F99417;
+  --contrast: #f99417;
   --mainColor: white;
-  --textColor: #191A19;
+  --textColor: #191a19;
 }
-.home{
-  padding-top: 4rem;
+.home {
+  /* padding-top: 4.5rem; */
   max-width: 100%;
   height: 100%;
 }
-.intro{
+.intro {
   width: 100%;
   min-height: 60vh;
   display: flex;
-  background-image: url("../images/background.jpeg");
+  background-image: url("../images/background.webp");
   position: relative;
   background-size: cover;
   background-position: center;
@@ -20,29 +21,49 @@
 
 .intro-overlay {
   position: absolute;
-  top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  min-width: 280px;
+  margin: auto;
+  height: 40%;
+  min-height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  font-family: 'Courier New', Courier, monospace;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--contrast);
+  border: 1px solid var(--contrast);
 }
 
-.introHead{
+.introHead {
   margin-top: 5%;
   max-width: 80%;
-  font-size: calc(30px + 2vw);
-  font-weight: 800;
+  font-size: calc(20px + 1vw);
+  font-weight: 600;
+  font-family: "Dancing Script", cursive;
 }
-.introText{
+.introText {
   margin: 0 5% 5% 5%;
   max-width: 80%;
-  font-size: calc(16px + 0.4vw);
+  font-weight: 500;
+  font-size: calc(14px + 0.8vw);
+}
+
+.introInfo{
+  display: flex;
+  justify-content: center;
+}
+
+.introInfo > p{
+  width: 60%;
+  min-width: 280px;
+  color: var(--contrast);
+  font-size: calc(12px + 0.6vw);
+  text-align: center;
 }
 
 .services {
@@ -57,7 +78,7 @@
   flex-basis: 100%;
 }
 
-.services .card {
+.services > .card {
   margin-top: 5%;
   flex-basis: 50%;
   padding: 10px;
@@ -66,6 +87,7 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 500px;
+  border: 1px solid black;
 }
 
 .services .card img {
@@ -74,40 +96,40 @@
   height: 300px;
 }
 
-.card > h2{
+.card > h2 {
   flex-basis: 100%;
   text-align: center;
 }
-.card > p{
+.card > p {
   margin-top: 0;
   flex-basis: 100%;
   text-align: center;
 }
 
 #bottone1 {
- padding-left: 33px;
- padding-right: 33px;
- padding-bottom: 16px;
- padding-top: 16px;
- border-radius: 9px;
- background: var(--contrast);
- border: none;
- font-family: inherit;
- text-align: center;
- cursor: pointer;
- transition: 0.4s;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 9px;
+  background: var(--contrast);
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 #bottone1:hover {
- box-shadow: 7px 5px 56px -14px var(--contrast);
+  box-shadow: 7px 5px 56px -14px var(--contrast);
 }
 
 #bottone1:active {
- transform: scale(0.97);
- box-shadow: 7px 5px 56px -10px var(--contrast);
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px var(--contrast);
 }
 
-.map{
+.map {
   display: flex;
   justify-content: center;
   margin: 5%;
